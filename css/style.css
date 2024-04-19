@@ -16,7 +16,44 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
+
+/*********** HEADER **********/
+.nav-menu{
+    width: 300px;
+}
+
+.header-top, .menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#Booki-logo{
+    width: 80px;
+    height: fit-content;
+    padding-top: 30px;
+}
+
+.header-top li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    /* border: 2px solid red; */
+    padding-top: 10px;
+    font-size: large;
+}
+
+.header-top a:focus{
+    border-top: 2px solid #0065fc;
+    color: #0065FC;
+}
+
+
+/***************************/
+
 
 .main-container {
     width: 100%;
