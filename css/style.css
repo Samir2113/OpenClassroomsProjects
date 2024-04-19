@@ -19,6 +19,20 @@ body {
     margin: 0px;
 }
 
+h1{
+    margin-bottom: 0px;
+}
+
+h3{
+    color:#000000;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+li{
+    list-style-type: none;
+}
+
 /*********** HEADER **********/
 .nav-menu{
     width: 300px;
@@ -40,8 +54,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    list-style-type: none;
-    /* border: 2px solid red; */
     padding-top: 10px;
     font-size: large;
 }
@@ -52,8 +64,92 @@ body {
 }
 
 
-/***************************/
+/************** Search-Bar *************/
+.research{
+    padding-top: 20px;
+}
 
+.search-bar{
+    width: fit-content;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+}
+
+.search-bar i, input{
+    padding: 15px;
+    margin: 0px;
+    border: 0px;
+    font-size: large;
+    font-weight: bolder;   
+}
+.search-bar i{
+    color: #000000;
+}
+
+#search{
+    width: 200px;
+    text-align: center;
+}
+
+.search-btn{
+    border-radius:0 15px 15px 0;
+    background-color: #0065fc;
+    color: #ffffff;
+}
+
+
+/**************Filter*************/
+
+.filter, .filter-types{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.filter-types{
+    justify-content: space-evenly;
+    width: 740px;
+    padding: 0px;
+}
+
+.filter-types li{
+    border: 2px solid #d9d9d9;
+    border-radius: 30px;
+    padding: 10px 20px ;
+}
+
+.filter-types li:hover{
+    cursor: pointer;
+    background-color: #deebff;
+}
+
+
+/**************** Infos ****************/
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.info-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #d9d9d9;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.info-logo i{
+    color: #0065fc;
+}
+
+/***********************************/
 
 .main-container {
     width: 100%;
