@@ -21,8 +21,8 @@
                 <img id="Booki-logo" src="images/logo/Booki.png" alt="Booki Logo">
                 <nav class="nav-menu">
                     <ul class="menu">
-                        <a href="#"><li id="Hébergements">Hébergements</li></a>
-                        <a href="#"><li id="Activités">Activités</li></a>
+                        <li id="Hébergements"><a href="#">Hébergements</a></li>
+                        <li id="Activités"><a href="#activités">Activités</a></li>
                     </ul>
                 </nav>    
             </section>
@@ -34,9 +34,11 @@
                     <h3>En plein centre-ville ou en pleine nature</h3>
                 </section>
                 <section class="search-bar">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" name="search" id="search" value="Marseille, France">
-                    <input type="button" value="Rechercher" class="search-btn">
+                    <form action="" method="post">
+                        <label for="search"><i class="fa-solid fa-location-dot"></i></label>
+                        <input type="text" name="search" id="search" value="Marseille, France">
+                        <input type="button" value="Rechercher" class="search-btn">
+                    </form>   
                 </section>
                 <section class="filter">
                     <span>Filtres</span>
@@ -53,7 +55,7 @@
                 </article>
             </div>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements">
                     <h2>Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <a href="#">
@@ -153,14 +155,14 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="false"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <h3 id="more-info">Afficher plus</h3>
+                    <a href="#"><h3 id="more-info">Afficher plus</h3></a>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -228,7 +230,7 @@
                     </div>
                 </section>
             </div>
-            <div class="activités">
+            <div id="activités">
                 <h2>Activités à Marseille</h2>
                 <section class="activités-cards">
                     <a href="#">
