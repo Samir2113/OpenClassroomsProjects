@@ -96,7 +96,8 @@ li{
 .search-bar{
     display: flex;
     justify-content: flex-start;
-    width: 100%;
+    /* width: 100%; */
+    width: fit-content;
     background-color: white;
     border: 1px solid #f2f2f2;
     border-radius: 15px;
@@ -106,7 +107,7 @@ li{
 .search-bar form{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    
 }
 
 .search-bar i, input{
@@ -185,28 +186,31 @@ li{
 .info{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+   
 }
 
 .info-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-content: center;
+    text-align: center;
     border: 1.5px solid #d9d9d9;
-    width: 23px;
-    height: 23px;
-    border-radius: 50px;
-    margin: 5px;
+    /* width: 60px; */
+    height: 2.5rem;
+    border-radius: 50%;
 }
 
 .info-logo i{
     color: #0065fc;
-    font-size: x-small;
+    font-size: small;
 }
 
 .info p{
+    display: block;
     font-weight: lighter;
+    margin: 0px;
+    width: 80%;
 }
 
 /***************** Hébergements Cards ******************/
@@ -520,10 +524,6 @@ li h3{
         padding: 0px;
     }
 
-    main{
-        /* padding: 0px 20px; */
-    }
-
     header{
         width: 100%;
     }
@@ -571,6 +571,7 @@ li h3{
 
     .search-bar{
         height: 50px;
+        width: 100%;
     }
 
     .search-bar label{
@@ -636,10 +637,6 @@ li h3{
         margin-top: 20px;
     }
 
-    .info-logo {
-        width: 10%;
-    }
-
     .info p{
         font-size: 0.96em;
     }
@@ -702,5 +699,9 @@ li h3{
 
     footer{
         flex-direction: column;
+    }
+
+    footer section{
+        width: max-content;
     }
 }
