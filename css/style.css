@@ -152,6 +152,7 @@ header a{
     border-radius: 15px;
     margin: 35px 0px 35px 0px;
     flex-direction: row;
+    height: 48px;
 }
 
 .research form i, input{
@@ -168,6 +169,7 @@ header a{
     padding: 15px;
     
 }
+
 
 #search{
     width: 200px;
@@ -578,15 +580,11 @@ li h3{
 
     }
 
-    .search-bar{
+    .research form{
         width: 100%;
     }
 
-    .search-bar form{
-        width: 100%;
-    }
-
-    .search-bar form label{
+    .research form label{
         text-align: center;
         align-content: center;
         width: 20%;
@@ -614,7 +612,7 @@ li h3{
 
     #search-icon i{
         display:contents;
-        color: var(--main-bg-color);
+        color: white;
     }
 
     .filter{
